@@ -6,18 +6,29 @@ $(window).on('load',function(){
   gsap.to('#navigation-content',0,{display:"none"});
   gsap.to('#navigation-content',0,{display:"flex",delay:1});
 })
+
 $(function(){
   $('.color-panel').on("click",function(e) {
     e.preventDefault();
     $('.color-changer').toggleClass('color-changer-active');
+  });
+
+  $('.colors a').on("click",function(e) {
+    e.preventDefault();
+    var attr = $(this).attr("title");
+    console.log(attr);
+    $('head').append('<link rel="stylesheet" href="css/'+attr+'.css">');
+
+    let selectedColor = window.getComputedStyle(this, null).getPropertyValue("background-color");
+
+    let pythonProgress = document.querySelector('.python-progress');
+    let cProgress = document.querySelector('.c-progress');
+
+    pythonProgress.style.backgroundColor = selectedColor;
+    cProgress.style.backgroundColor = selectedColor;
+  });
 });
-$('.colors a').on("click",function(e) {
-  e.preventDefault();
-  var attr = $(this).attr("title");
-  console.log(attr);
-  $('head').append('<link rel="stylesheet" href="css/'+attr+'.css">');
-});
-});
+
 $(function(){
      $('.menubar').on('click',function(){
          gsap.to('#navigation-content',.6,{y:0});
@@ -25,7 +36,7 @@ $(function(){
      $('.navigation-close').on('click',function(){
         gsap.to('#navigation-content',.6,{y:"-100%"});
     });
-   }); 
+});
 
 $(function(){
     var TxtRotate = function(el, toRotate, period) {
@@ -37,24 +48,24 @@ $(function(){
         this.tick();
         this.isDeleting = false;
       };
-      
+
       TxtRotate.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
-      
+
         if (this.isDeleting) {
           this.txt = fullTxt.substring(0, this.txt.length - 1);
         } else {
           this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
-      
+
         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-      
+
         var that = this;
         var delta = 200 - Math.random() * 100;
-      
+
         if (this.isDeleting) { delta /= 2; }
-      
+
         if (!this.isDeleting && this.txt === fullTxt) {
           delta = this.period;
           this.isDeleting = true;
@@ -63,12 +74,12 @@ $(function(){
           this.loopNum++;
           delta = 100;
         }
-      
+
         setTimeout(function() {
           that.tick();
         }, delta);
       };
-      
+
       window.onload = function() {
         var elements = document.getElementsByClassName('txt-rotate');
         for (var i=0; i<elements.length; i++) {
@@ -85,6 +96,7 @@ $(function(){
         document.body.appendChild(css);
       };
 })
+
 $(function(){
 
     $('#about-link').on('click',function(){
@@ -160,11 +172,12 @@ gsap.to('#navigation-content',0,{display:'flex',delay:2});
 })
 
 })
+
 $(function(){
  var body =  document.querySelector('body');
  var $cursor = $('.cursor')
    function cursormover(e){
-    
+
     gsap.to( $cursor, {
       x : e.clientX ,
       y : e.clientY,
@@ -176,13 +189,13 @@ $(function(){
      scale:1.4,
      opacity:1
     })
-    
+
   }
   function cursor(e){
     gsap.to( $cursor, {
      scale:1,
      opacity:.6
-    }) 
+    })
   }
   $(window).on('mousemove',cursormover);
   $('.menubar').hover(cursorhover,cursor);
@@ -190,3 +203,44 @@ $(function(){
   $('.navigation-close').hover(cursorhover,cursor);
 
 })
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let formData = new FormData(this);
+
+    fetch('submit.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Success',
+                text: 'Email sent successfully',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'OK'
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Failed to send email',
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'OK'
+            });
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'An error occurred while sending the email',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+        });
+    });
+});

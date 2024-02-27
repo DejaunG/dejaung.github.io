@@ -384,7 +384,7 @@ body{
 }
 #breaker{
     height: 100vh;
-    width: 200%;
+    width: 100vw;
     background-color: #481380;
     opacity: 1;
     animation: breakeranimate 2s linear;
@@ -404,6 +404,8 @@ body{
     50%{ transform : translateX(0%) }
     100%{ transform : translateX(100%) }
 }
+
+
 .color{
     color: #101010;
     transition: all .4s ease;
@@ -711,7 +713,7 @@ body{
     border-radius: 10px;
     background: #481380;
 }
-.adobe-progress{
+.python-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -720,24 +722,12 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:83%;
+    width:66%;
     border-radius: 10px;
     background: #481380;
 }
-.php-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:85%;
-    border-radius: 10px;
-    background: #481380;
-    transition: all .4s ease;
-}
-.jquery-progress{
+
+.c-progress{
     position: absolute;
     top:10%;
     left:1%;
@@ -746,23 +736,11 @@ body{
     align-items: center;
     justify-content: center;
     transition: all .4s ease;
-    width:94%;
+    width:57%;
     border-radius: 10px;
     background: #481380;
 }
-.seo-progress{
-    position: absolute;
-    top:10%;
-    left:1%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:84%;
-    border-radius: 10px;
-    transition: all .4s ease;
-    background: #481380;
-}
+
 .portfolio-header{
     height: auto;
     width: 100%;
@@ -1401,8 +1379,8 @@ For devices with smaller width like mobile phone
         display: none;
     }
     #breaker{
-        height: 50vh;
-        width: 200%;
+        height: 100vh;
+        width: 100vw;
         background-color: #481380;
         opacity: 1;
         animation: breakeranimate 2s linear;
@@ -1855,9 +1833,9 @@ for tabs and large phones
     .contact{
         display: none;
     }
-    #breaker{
-        height: 50vh;
-        width: 200%;
+    #breaker (don't change'){
+        height: 100vh;
+        width: 100vw;
         background-color: #481380;
         opacity: 1;
         animation: breakeranimate 2s linear;

@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Dejaun Gayle - Personal Portfolio" />
-	<meta name="keywords" content="research, business card, creative, creative portfolio, cv theme, online resume, personal, portfolio, professional cv, responsive portfolio, resume, resume theme, vcard" />
 	<meta name="author" content="Dejaun Gayle" />
     <title>Dejaun Gayle - Personal Portfolio</title>
-  <!--logo-img-->
+
+   <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!--logo-img-->
    <link rel="icon" type="image/png" href="images/Freelance Transparent Logo.png">
-   <!--logo-img-->
-   <!--main css file should not be removed -->
+
+    <!--main css files-->
     <link rel="stylesheet" href="css/index.css">
-    <!--main css file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+
 </head>
 <body>
     <!--contains all the div-->
@@ -44,11 +52,14 @@
                 <span class="close-second"></span>
             </div>
             <div class="navigation-links">
-                <a href="#" data-text="HOME" id="home-link" >HOME</a>
-                <a href="#" data-text="WIP" id="about-lin" >WIP (Projects Sections Soon)</a>
-                <a href="#" data-text="" id="research-link" ></a>
-                <a href="#" data-text="" id="portfolio-link" ></a>
-                <a href="#" data-text="" id="contact-link" ></a>
+                <a href="#" data-text="HOME" id="home-link" >Home</a>
+                <a href="#" data-text="PORTFOLIO" id="portfolio-link" >Portfolio</a>
+                <a href="#" data-text="ABOUT" id="about-link" >About Me</a>
+                <a href="#" data-text="Contact" id="contact-link" >Contact Me</a>
+                <a href="classactivities/CPS3500/myhtml.html" data-text="" ></a>
+                <a href="classactivities/CPS3500/tableTest.html" data-text="" ></a>
+
+
             </div>
         </div>
         <!--Navigator-Fullscreen END-->
@@ -77,6 +88,7 @@
             <span  class="txt-rotate color" data-period="1200"data-rotate='[ " Student.", " Researcher.", " Developer.", " Data Analyst. ", " Desktop Specialist. "]'></span>
             <span class="slash">|</span>
         </div>
+                    <!--Social Media Side Links-->
                     <div class="contact">
                         <a href="https://github.com/DejaunG"><img src="images/github-logo.png" class="contactpic" alt="github-logo"></a>
                         <a href="https://www.linkedin.com/in/dev-dejaun"><img src="images/linkedin logo.png" class="contactpic" alt="linkedin-logo"></a>
@@ -141,8 +153,9 @@
                      <br>
                <span class="about-second-line"> Pursing a B.S. in Computer Science at Kean University, I have professional experience as a Project Manager and Desktop Analyst. </span>
                <div class="cv">
-                <a href="#"><button>Download <span class="colors">CV</span></button></a>
-            </div>
+                   <a href="Resume/Dejaun's%202024%20Resume%20Revision%204-2.pdf" download><button>Download <span class="colors">CV</span></button></a>
+                   <a href="Resume/Dejaun's%202024%20Resume%20Revision%204-2.pdf" target="_blank"><button>View <span class="colors">Resume</span></button></a>
+               </div>
             </div>
             <!--about picture-->
             <div class="about-img">
@@ -185,7 +198,7 @@
                     </div>
             <!--services header-->
                     <div class="services-heading wow">
-                        <span class="color3">My</span>
+                        <span class="color3">My</span> <span class="colors">Hobbies</span>
                     </div>
             <!--services header end-->
             <!--services content-->
@@ -195,8 +208,8 @@
                                <img src="images/coding.png" alt="service-one">
                                </div>
                                <div class="service-description">
-                                <h2>Web Designing</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam possimus</p>
+                                <h2>Free-Lance Developer</h2>
+                                <p>I spend a good portion of my free-time developing applications and researching new methods to enhance pre-existing and new applications. </p>
                                </div>
                            </div>
                            <div class="service-two service wow">
@@ -205,7 +218,7 @@
                                </div>
                                <div class="service-description">
                                 <h2>Social Media</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam possimus</p>
+                                <p>I am an influencer with a niche mostly pertaining to Cars and Software Development.</p>
                                </div>
                            </div>
                            <div class="service-three service wow">
@@ -213,8 +226,8 @@
                                <img src="images/bulb.png" alt="service-three">
                             </div>
                             <div class="service-description">
-                                <h2>Creative Design</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quibusdam possimus</p>
+                                <h2>Computer Technician</h2>
+                                <p>I build Custom Computer Rigs as well as at home servers for myself as well as other people!</p>
                             </div>
                         </div>
                     </div>
@@ -223,7 +236,7 @@
             <!--services end-->
             <div id="skills">
                 <div class="skills-header">
-                     My <span class="colors"> Skills</span>
+                     My <span class=""> Skills</span>
                 </div>
                 <div class="skills-content " style="text-align: center;">
                     <div class="skill-html skill">
@@ -239,7 +252,7 @@
                     <div class="skill-html skill">
                         <div class="skill-text">
                     <div class="html">
-                      Javascript
+                      Java
                     </div>
                         </div>
                     <div class="html-prog wow prog">
@@ -249,41 +262,21 @@
                     <div class="skill-html skill">
                         <div class="skill-text">
                     <div class="html">
-                        Adobe Ps
+                        Python
                     </div>
                         </div>
                     <div class="html-prog wow prog">
-                 <div class="adobe-progress wow">83%</div>
+                 <div class="python-progress wow">66%</div>
                     </div>
                     </div>
                     <div class="skill-html skill">
                         <div class="skill-text">
                     <div class="html">
-                        PHP
+                        C#
                     </div>
                         </div>
                     <div class="html-prog wow prog">
-                 <div class="php-progress wow">87%</div>
-                    </div>
-                    </div>
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                        JQuery
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="jquery-progress wow">94%</div>
-                    </div>
-                    </div>
-                    <div class="skill-html skill">
-                        <div class="skill-text">
-                    <div class="html">
-                        SEO
-                    </div>
-                        </div>
-                    <div class="html-prog wow prog">
-                 <div class="seo-progress wow">84%</div>
+                 <div class="c-progress wow">57%</div>
                     </div>
                     </div>
                 </div>
@@ -323,172 +316,43 @@
                     </div>
                 </div>
                 </div>
-            <div class="portfolio-header"> <span class="color"> My </span> Portfolio
-            <span class ="header-caption"> Some Of My <span class="color"> Works</span></span></div>
-             <div id="portfolio-content">
-                 <div class="portfolio portfolio-first">
-                     <div class="portfolio-image">
-                        <img src="images/portfolio-first.jpg" alt="portfolio-first">
-                     </div>
-                     <div class="portfolio-text">
-                         <h2>App Idea</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate 
-                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                     </div>
-                 </div>
-                 <div class="portfolio portfolio-second">
+            <div class="portfolio-header"> <span class="color3"> My </span> Portfolio
+            <span class ="header-caption"> Some Of My <span class="color3"> Works</span></span></div>
+
+                 <div class="portfolio">
+    <div class="portfolio-image">
+        <img src="images/bootStrap.webp" alt="bootstrap-project">
+    </div>
+    <div class="portfolio-text">
+        <h2>Bootstrap Test Project</h2>
+        <p>Bootstrap based project conducted to form and build a foundation with common concepts in mind.</p>
+        <div class="button">
+            <a href="classactivities/CPS3500/bootstrapTest.html">
+                <button>
+                    <span class="index"> View Project<i class="gg-arrow-right"></i></span>
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+            <div id="portfolio-content">
+                <div class="portfolio portfolio-first">
                     <div class="portfolio-image">
-                        <img src="images/portfolio-second.jpg" alt="portfolio-second">
+                        <img src="images/freedomGPT2.jpeg" alt="portfolio-first">
                     </div>
                     <div class="portfolio-text">
-                        <h2>Web Designing</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cumque placeat minima ad laudantium suscipit
-                             voluptatem ducimus. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
+                        <h2>freedomGPT</h2>
+                        <p>Details Coming Soon!</p>
                         <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
                     </div>
                 </div>
-             
-                <div class="portfolio portfolio-third">
-                    <div class="portfolio-image">
-                        <img src="images/portfolio-third.jpg" alt="portfolio-third">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>UI Designing</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate expedita eius dignissimos
-                            .. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-                <div class="portfolio portfolio-fourth">
-                    <div class=" portfolio-image">
-                        <img src="images/portfolio-fourth.jpg" alt="portfolio-fourth">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>Wow Graphics</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad ut optio repellat cupiditate
-                             expedita eius dignissimos. Id cumque placeat minima ad laudantium suscipit voluptatem ducimus</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-                 </div>
+
+
+             </div>
              </div>
         <!--portfolio end-->
-        <!--research-->
-        <div id="research">
-            <div class="color-changer">
-                <div class="color-panel">
-                    <img src="images/gear.png" alt="">
-                </div>
-                <div class="color-selector">
-                    <div class="heading">Custom Colors</div>
-                    <div class="colors">
-                        <ul >
-                        <li>
-                            <a href="#0" class="color-red " title="color-red"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-purple" title="color-purple"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-malt" title="color-malt"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-green" title="color-green"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-blue" title="color-blue"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-orange" title="color-orange"></a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-        <div class="research-header"> research</span>
-            <span class ="header-caption"> My Latest <span class="color"> research posts.</span></span></div>
-            <div class="research-content">
-                 <div class="research">
-                     <a href="#">
-                     <div class="img">
-                        <img src="images/post-one.jpg" alt="research-one">
-                        <div class="research-date">8 May,20</div>
-                     </div>
-                     <div class="research-text">
-                         <h3>Harleys In Hawaai</h3>
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias dolore recusandae illum, corrupti quo 
-                             veniam saepe aliquid! Quis voluptates ratione consequuntur vel, perferendis cum provident? Magnam fugiat voluptas
-                              libero.</p>
-                     </div></a>
-                 </div>      
-                 <div class="research">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-two.jpg" alt="research-two">
-                        <div class="research-date">16 Jan,20</div>
-                    </div>
-                    <div class="research-text">
-                        <h3>Key To Be Productive</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt maiores, 
-                            recusandae cupiditate ducimus a non tempora, architecto obcaecati eaque ipsum assumenda harum dolorum iusto tenetur
-                             eius eligendi dolor magnam sit!</p>
-                    </div></a>
-                </div>
-                <div class="research">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-three.jpg" alt="research-three">
-                        <div class="research-date">30 Nov,19</div>
-                    </div>
-                    <div class="research-text">
-                        <h3>Caffeine Addict</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo nostrum impedit
-                            ipsam perspiciatis ratione sapiente quasi optio reprehenderit, labore consequuntur suscipit cum quas.
-                             Officiis dolorem asperiores, ut necessitatibus quas doloremque?</p>
-                    </div></a>
-                </div>
-                <div class="research">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-four.jpg" alt="research-four">
-                        <div class="research-date">6 Jul,19</div>
-                    </div>
-                    <div class="research-text">
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, veniam ratione quam vitae,
-                             quibusdam explicabo rem debitis velit ipsa repellat, impedit nulla fuga? Amet corporis praesentium quae.
-                              Sed, quibusdam necessitatibus.</p>
-                    </div></a>
-                </div>
-                <div class="research">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-five.jpg" alt="research-five">
-                        <div class="research-date">1 Jun,19</div>
-                    </div>
-                    <div class="research-text">
-                        <h3>Work From Home</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sunt eum necessitatibus rem
-                            dignissimos nulla mollitia cumque, provident officiis non vitae? Animi aut doloremque illum, soluta hic minus
-                            sint explicabo..</p>
-                    </div></a>
-                </div>
-                <div class="research">
-                    <a href="#">
-                    <div class="img">
-                        <img src="images/post-six.jpg" alt="research-six">
-                        <div class="research-date">28 Feb,19</div>
-                    </div>
-                    <div class="research-text">
-                        <h3>Business Trip</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo tempora dolorum fuga ratione, unde,
-                            ex quaerat iste numquam nemo nihil nobis rem sint quia recusandae dignissimos quos ut rerum nam.</p>
-                    </div></a>
-                </div>
-            </div>
-        </div>
-        <!--research end-->
+
         <!--contact-->
      <div id="contact">
         <div class="color-changer">
@@ -522,62 +386,32 @@
             </div>
             </div>
          <div class="contact-header">Contact <span class="color3"> Me</span>
-        <div class="contact-header-caption"> <span class="color3"> Get</span> In Touch.</div></div>
-        <div class="contact-content">
-            <!--Contact form-->
+             <div class="contact-header-caption"> <span class="color3"> Get</span> In Touch.</div>
+         </div>
+         <div class="contact-content">
+             <!--Contact form-->
+             <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
              <div class="contact-form">
                  <div class="form-header">
                      Message Me
                  </div>
-                 <form id="myForm" action="#">
-                    <div class="input-line">
-                        <input  id="name" type="text" placeholder="Name" class="input-name">
-                        <input id="email" type="email" placeholder="Email"  class="input-name">
-                    </div>
-                    <input type="text" id="subject" placeholder="subject" class="input-subject">
-                    <textarea id ="body" class="input-textarea" placeholder="message"></textarea>
-                    <button type="button" id ="submit" value="send">Submit</button>
+                 <form id="myForm" action="submit.php" method="POST">
+                     <div class="input-line">
+                         <input name="name" id="name" type="text" placeholder="Name" class="input-name">
+                         <input name="email" id="email" type="email" placeholder="Email" class="input-name">
+                     </div>
+                     <input name="subject" type="text" id="subject" placeholder="Subject" class="input-subject">
+                     <textarea name="message" id="body" class="input-textarea" placeholder="Message"></textarea>
+                     <button type="submit" id="submit">Submit</button>
                  </form>
-               
              </div>
+         </div>
+
+
+     </div>
             <!--Contact form-->
-            <!--Contact information-->
-             <div class="contact-info">
-                <div class="contact-info-header">
-                    Contact Info
-                </div>
-                <div class="contact-info-content">
-                <div class="contect-info-content-line">
-                    <img src="./images/icon-name.png" class="icon" alt="name-icon">
-                    <div class="contact-info-icon-text">
-                        <h6>Name</h6>
-                        <p>Dejaun Gayle</p>
-                  </div>
-                </div>
-                <div class="contect-info-content-line">
-                  <img src="./images/icon-location.png" class="icon" alt="location-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Location</h6>
-                      <p>Edison, NJ</p>
-                </div>
-              </div>
-              <div class="contect-info-content-line">
-                  <img src="./images/icon-phone.png" class="icon" alt="phone-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Call</h6>
-                      <p>(770)-624-0864</p>
-                </div>
-              </div>
-              
-              <div class="contect-info-content-line">
-                  <img src="./images/icon-email.png" class="icon" alt="email-icon">
-                  <div class="contact-info-icon-text">
-                      <h6>Email</h6>
-                      <p>dejaun.scholar@gmail.com</p>
-                </div>
-              </div>
-                </div>
-            <!--Contact information end-->
+            
            </div>
         </div>
      </div>
