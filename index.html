@@ -319,15 +319,17 @@
             <div class="portfolio-header"> <span class="color3"> My </span> Portfolio
             <span class ="header-caption"> Some Of My <span class="color3"> Works</span></span></div>
 
-                 <div class="portfolio">
+           <!-- PacMan Section -->
+            <link rel="stylesheet" type="text/css" href="css/index.css">
+<div class="portfolio">
     <div class="portfolio-image">
-        <img src="images/bootStrap.webp" alt="bootstrap-project">
+        <img src="./images/PacMan.webp" alt="pacman-project">
     </div>
     <div class="portfolio-text">
-        <h2>Bootstrap Test Project</h2>
-        <p>Bootstrap based project conducted to form and build a foundation with common concepts in mind.</p>
+        <h2>Simple PacMan Game</h2>
+        <p>Simple PacMan style game made mostly using JavaScript with minimal CSS styling elements, this project serves as a practice container for my JavaScript based learning.</p>
         <div class="button">
-            <a href="classactivities/CPS3500/bootstrapTest.html">
+            <a href="#" data-toggle="modal" data-target="#gameModal">
                 <button>
                     <span class="index"> View Project<i class="gg-arrow-right"></i></span>
                 </button>
@@ -336,6 +338,48 @@
     </div>
 </div>
 
+<!-- Bootstrap Modal for Game -->
+<div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="gameModalLabel">Simple PacMan Game</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Game iframe -->
+        <iframe src="Personal-Projects/JavaScript/pacMan/index.html" style="width:100%;height:500px;" frameborder="0"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- PacMan Section End -->
+
+            <!--BootStrap-->
+            <div class="portfolio">
+                <div class="portfolio-image">
+                    <img src="images/bootStrap.webp" alt="bootstrap-project">
+                </div>
+                <div class="portfolio-text">
+                    <h2>Bootstrap Test Project</h2>
+                    <p>Bootstrap based project conducted to form and build a foundation with common concepts in mind.</p>
+                    <div class="button">
+                        <a href="classactivities/CPS3500/bootstrapTest.html">
+                            <button>
+                                <span class="index"> View Project<i class="gg-arrow-right"></i></span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--BootStrap End-->
+
+            <!--FreedomGPT2-->
             <div id="portfolio-content">
                 <div class="portfolio portfolio-first">
                     <div class="portfolio-image">
