@@ -285,117 +285,169 @@
         </div>
         <!--about end-->
         <!--portfolio-->
-        <div id="portfolio">
-            <div class="color-changer">
-                <div class="color-panel">
-                    <img src="images/gear.png" alt="">
-                </div>
-                <div class="color-selector">
-                    <div class="heading">Custom Colors</div>
-                    <div class="colors">
-                        <ul >
-                        <li>
-                            <a href="#0" class="color-red " title="color-red"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-purple" title="color-purple"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-malt" title="color-malt"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-green" title="color-green"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-blue" title="color-blue"></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="color-orange" title="color-orange"></a>
-                        </li>
-                        </ul>
-                    </div>
-                </div>
-                </div>
-            <div class="portfolio-header"> <span class="color3"> My </span> Portfolio
-            <span class ="header-caption"> Some Of My <span class="color3"> Works</span></span></div>
+<div id="portfolio">
+    <div class="color-changer">
+        <div class="color-panel">
+            <img src="images/gear.png" alt="">
+        </div>
+        <div class="color-selector">
+            <div class="heading">Custom Colors</div>
+            <div class="colors">
+                <ul>
+                    <li>
+                        <a href="#0" class="color-red" title="color-red"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-purple" title="color-purple"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-malt" title="color-malt"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-green" title="color-green"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-blue" title="color-blue"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="color-orange" title="color-orange"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-header">
+        <span class="color3">My</span> Portfolio
+        <span class="header-caption">Some Of My <span class="color3">Works</span></span>
+    </div>
 
-           <!-- PacMan Section -->
-            <link rel="stylesheet" type="text/css" href="css/index.css">
+    <div id="portfolio-content">
+        <!-- Project Database -->
+<div class="portfolio portfolio-first">
+    <div class="portfolio-image">
+        <img src="images/project-database.jpg" alt="Project Database">
+    </div>
+    <div class="portfolio-text">
+        <h2>FutureForge DB</h2>
+        <div class="project-classification">
+            <span class="badge badge-database">Database</span>
+            <span class="badge badge-react">React, Mantine</span>
+        </div>
+        <p>FutureForge DB is a cutting-edge project database developed using React and the Mantine library. This dynamic web application showcases my skills in modern web development, UI/UX design, and system administration. Hosted on a Linux Pi server using Apache and leveraging the open-source DuckDNS for domain management, this project demonstrates my ability to create full-stack solutions and deploy them in real-world environments. The database offers an intuitive interface for managing and showcasing various projects, highlighting my commitment to creating practical, scalable, and user-friendly applications.</p>
+        <div class="button"><a href="https://futureforge.duckdns.org/" target="_blank"><button><span class="index">View Project</span></button></a></div>
+    </div>
+</div>
+
+<!-- AdversaGuard -->
+<div class="portfolio">
+    <div class="portfolio-image">
+        <img src="images/adverseraguard.jpg" alt="AdversaGuard">
+    </div>
+    <div class="portfolio-text">
+        <h2>AdversaGuard</h2>
+        <div class="project-classification">
+            <span class="badge badge-program">Program</span>
+            <span class="badge badge-python">Python</span>
+        </div>
+        <p>AdversaGuard is an advanced tool designed for the analysis and defense against adversarial attacks on image classification systems. It implements state-of-the-art techniques like Fast Gradient Sign Method (FGSM) for generating adversarial examples, coupled with sophisticated detection and reversion mechanisms. This project showcases the practical application of AI security concepts in protecting machine learning models from malicious inputs.</p>
+        <div class="button"><a href="https://github.com/DejaunG/ImageAttackAnalysis" target="_blank"><button><span class="index">View Project</span></button></a></div>
+    </div>
+</div>
+
+<!-- LLM Security -->
+<div class="portfolio">
+    <div class="portfolio-image">
+        <img src="images/llm-security.jpg" alt="LLM Security">
+    </div>
+    <div class="portfolio-text">
+        <h2>LLM Security</h2>
+        <div class="project-classification">
+            <span class="badge badge-research">Research Paper</span>
+            <span class="badge badge-na">N/A</span>
+        </div>
+        <p>This comprehensive study delves into the vulnerabilities of Large Language Models (LLMs) like ChatGPT and DALL-E 3 when faced with adversarial prompts. The research explores various attack vectors, analyzes their impact on model outputs, and proposes novel defense mechanisms. By highlighting significant ethical and security risks, this project contributes to the ongoing efforts to make AI systems more robust and reliable in real-world applications.</p>
+        <div class="button"><a href="https://github.com/DejaunG/adversarial-prompts-llm-security" target="_blank"><button><span class="index">View Project</span></button></a></div>
+    </div>
+</div>
+
+<!-- Multimodal Defense -->
+<div class="portfolio">
+    <div class="portfolio-image">
+        <img src="images/multimodal-defense.jpg" alt="Multimodal Defense">
+    </div>
+    <div class="portfolio-text">
+        <h2>Multimodal Defense</h2>
+        <div class="project-classification">
+            <span class="badge badge-research">Research Paper</span>
+            <span class="badge badge-poster">Poster</span>
+            <span class="badge badge-python">Python</span>
+        </div>
+        <p>This research project focuses on the detection and mitigation of multimodal adversarial attacks on Large Language Models. It investigates the complex interactions between text and image inputs in AI systems, identifying potential vulnerabilities that arise from these combinations. The study proposes innovative techniques for defending against such attacks, contributing to the development of more secure and reliable multimodal AI systems for various applications.</p>
+        <div class="button"><a href="https://github.com/DejaunG/multimodal-adversarial-attack-detection" target="_blank"><button><span class="index">View Project</span></button></a></div>
+    </div>
+</div>
+
+<!-- AI Resilience -->
+<div class="portfolio">
+    <div class="portfolio-image">
+        <img src="images/ai-resilience.jpg" alt="AI Resilience">
+    </div>
+    <div class="portfolio-text">
+        <h2>AI Resilience</h2>
+        <div class="project-classification">
+            <span class="badge badge-research">Research Paper</span>
+            <span class="badge badge-na">N/A</span>
+        </div>
+        <p>This groundbreaking study introduces a novel approach to evaluating AI model resilience against adversarial prompts. It presents the Response Quality Score (RQS), a newly developed metric designed to assess the nuances of AI responses under adversarial conditions. The research provides critical insights into the robustness of leading AI models like ChatGPT-4, Bard, Claude, and Microsoft Copilot, offering valuable contributions to the field of AI security and reliability.</p>
+        <div class="button"><a href="https://www.mdpi.com/2079-9292/13/5/842" target="_blank"><button><span class="index">View Paper</span></button></a></div>
+    </div>
+</div>
+
+<!-- PacMan Game -->
 <div class="portfolio">
     <div class="portfolio-image">
         <img src="./images/PacMan.webp" alt="pacman-project">
     </div>
     <div class="portfolio-text">
-        <h2>Simple PacMan Game</h2>
-        <p>Simple PacMan style game made mostly using JavaScript with minimal CSS styling elements, this project serves as a practice container for my JavaScript based learning.</p>
+        <h2>PacMan Game</h2>
+        <div class="project-classification">
+            <span class="badge badge-game">Game</span>
+            <span class="badge badge-javascript">JavaScript</span>
+        </div>
+        <p>This PacMan-style game is a showcase of my JavaScript programming skills. Developed with minimal CSS styling, it serves as a practical learning project where I implemented game logic, user controls, and basic graphics rendering. The project demonstrates my ability to create interactive web applications and my understanding of fundamental programming concepts in a fun, engaging format.</p>
         <div class="button">
             <a href="#" data-toggle="modal" data-target="#gameModal">
                 <button>
-                    <span class="index"> View Project<i class="gg-arrow-right"></i></span>
+                    <span class="index">Play Game<i class="gg-arrow-right"></i></span>
                 </button>
             </a>
         </div>
     </div>
 </div>
-
-<!-- Bootstrap Modal for Game -->
-<div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="gameModalLabel">Simple PacMan Game</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <!-- Game iframe -->
-        <iframe src="./personal-project/java-script/pacMan/index.html" style="width:100%;height:500px;" frameborder="0"></iframe>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
     </div>
-  </div>
-</div>
-<!-- PacMan Section End -->
 
-            <!--BootStrap-->
-            <div class="portfolio">
-                <div class="portfolio-image">
-                    <img src="images/bootStrap.webp" alt="bootstrap-project">
+    <!-- Bootstrap Modal for PacMan Game-->
+    <div class="modal fade" id="gameModal" tabindex="-1" role="dialog" aria-labelledby="gameModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameModalLabel">PacMan Game</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="portfolio-text">
-                    <h2>Bootstrap Test Project</h2>
-                    <p>Bootstrap based project conducted to form and build a foundation with common concepts in mind.</p>
-                    <div class="button">
-                        <a href="classactivities/CPS3500/bootstrapTest.html">
-                            <button>
-                                <span class="index"> View Project<i class="gg-arrow-right"></i></span>
-                            </button>
-                        </a>
-                    </div>
+                <div class="modal-body">
+                    <!-- Game iframe -->
+                    <iframe src="./personal-project/java-script/pacMan/index.html" style="width:100%;height:500px;" frameborder="0"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
-            <!--BootStrap End-->
-
-            <!--FreedomGPT2-->
-            <div id="portfolio-content">
-                <div class="portfolio portfolio-first">
-                    <div class="portfolio-image">
-                        <img src="images/freedomGPT2.jpeg" alt="portfolio-first">
-                    </div>
-                    <div class="portfolio-text">
-                        <h2>freedomGPT</h2>
-                        <p>Details Coming Soon!</p>
-                        <div class="button"><a href="#"><button><span class="index"> View Project<i class="gg-arrow-right"></i></span></button></a></div>
-                    </div>
-                </div>
-
-
-             </div>
-             </div>
-        <!--portfolio end-->
+        </div>
+    </div>
+</div>
+<!--portfolio end-->
 
         <!--contact-->
      <div id="contact">
