@@ -2612,6 +2612,8 @@ for tabs and large phones
 .badge {
     display: inline-block;
     padding: 0.25em 0.4em;
+    margin-right: -1em;
+    margin-left: 1.5em;
     font-size: 75%;
     font-weight: 700;
     line-height: 1;
@@ -2621,8 +2623,7 @@ for tabs and large phones
     border-radius: 0.25rem;
     color: #fff;
     background-color: #007bff;
-    margin-right: -1em;
-    margin-left: 1.5em;
+
 }
 
 .badge-database {
