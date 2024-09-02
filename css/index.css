@@ -2238,12 +2238,6 @@ for tabs and large phones
 }
 
 
-
-
-
-
-
-
 @media all and (max-width: 9000px) and (min-width: 1441px){
 
     .portfolio-image img{
@@ -2613,20 +2607,22 @@ for tabs and large phones
         width: 120%;
     }
 
-    .badge {
-        display: inline-block;
-        padding: 0.25em 0.4em;
-        font-size: 75%;
-        font-weight: 700;
-        line-height: 1;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: baseline;
-        border-radius: 0.25rem;
-        color: #fff;
-        background-color: #007bff;
-        margin-right: 0.5em;
-        margin-bottom: 0.5em;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: #007bff;
+    margin-right: -1em;
+    margin-left: 1.5em;
 }
 
 .badge-database {
@@ -2662,9 +2658,3 @@ for tabs and large phones
     color: #000;
 }
 
-.badge-na {
-    background-color: #6c757d;
-}
-
-
-}
