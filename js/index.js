@@ -21,7 +21,10 @@ $(function(){
 
     let selectedColor = window.getComputedStyle(this, null).getPropertyValue("background-color");
 
-    let pythonProgress = document.querySelector('.python-progress');
+    $('.colors, .color3').css('color', selectedColor);
+
+
+      let pythonProgress = document.querySelector('.python-progress');
     let cProgress = document.querySelector('.c-progress');
 
     pythonProgress.style.backgroundColor = selectedColor;
