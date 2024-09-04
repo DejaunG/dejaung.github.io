@@ -577,11 +577,10 @@ body{
     padding:2.5%;
 }
 .service{
-    height:380px;
+    height:410px;
     width:28%;
     margin: 1.5%;
     background-color: #191919;
-    ;
     display: inline-block;
     box-shadow:0px 0px 25px rgb(0,0,0,.05);
     position: relative;
@@ -600,7 +599,7 @@ body{
     z-index: 2;
     position: relative;
     margin: 20px;
-    border-radius: 30%;
+    border-radius: 20%;
     padding: 10px;
     border: 0px solid #481380;
     background: #481380;
@@ -1469,7 +1468,7 @@ For devices with smaller width like mobile phone
         border-radius: 10%;
     }
     .service{
-        height:320px;
+        height:345px;
         width:90%;
         margin: 1.5%;
         background-color: #191919;
@@ -1486,7 +1485,7 @@ For devices with smaller width like mobile phone
         z-index: 2;
         position: relative;
         margin: 20px;
-        border-radius: 30%;
+        border-radius: 20%;
         padding: 10px;
         height:80px;
         transition: all .8s ease;
@@ -2299,7 +2298,7 @@ For devices with smaller width like mobile phone
 
         }
         .service{
-            height:400px;
+            height:450px;
             width:28%;
             margin: 1.5%;
             padding: 10px;
@@ -2322,7 +2321,7 @@ For devices with smaller width like mobile phone
             z-index: 2;
             position: relative;
             margin: 20px;
-            border-radius: 30%;
+            border-radius: 20%;
             padding: 10px;
             height:120px;
             transition: all .8s ease;
