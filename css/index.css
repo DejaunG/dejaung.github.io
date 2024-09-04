@@ -1783,7 +1783,7 @@ For devices with smaller width like mobile phone
 
 }
 
-@media (min-width: 1650px) {
+@media (min-width: 1100px) and (min-height: 400px) {
     .header-image img {
         height: 100%;
         width: 100%;
