@@ -724,6 +724,8 @@ body{
     background: #481380;
 }
 
+
+
 .c-progress{
     position: absolute;
     top:10%;
@@ -773,8 +775,8 @@ body{
     justify-content: center;
     padding: 1.5%;
     padding-right: 2%;
-padding-top: 50px;
-padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .portfolio-text{
@@ -1511,8 +1513,8 @@ For devices with smaller width like mobile phone
         justify-content: center;
         padding: 1.5%;
         padding-right: 2%;
-    padding-top: 50px;
-    padding-bottom: 40px;
+        padding-top: 50px;
+        padding-bottom: 40px;
     }
     .portfolio-text{
         width: 90%;
@@ -1781,7 +1783,7 @@ For devices with smaller width like mobile phone
 
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 1650px) {
     .header-image img {
         height: 100%;
         width: 100%;
