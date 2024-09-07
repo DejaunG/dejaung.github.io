@@ -406,7 +406,7 @@ body{
 
 
 .color{
-    color: #101010;
+    color: #0a0a0a;
     transition: all .4s ease;
 }
 .color2{
@@ -414,7 +414,15 @@ body{
     transition: all .4s ease;
 }
 .color3{
-    color: #481380;
+    color: #9370DB;
+    transition: all .4s ease;
+}
+.color4{
+    color: #D3D3D3 ;
+    transition: all .4s ease;
+}
+.color5{
+    color: #FFD700;
     transition: all .4s ease;
 }
 #about{

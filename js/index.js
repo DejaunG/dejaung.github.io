@@ -21,7 +21,7 @@ $(function(){
 
     let selectedColor = window.getComputedStyle(this, null).getPropertyValue("background-color");
 
-    $('.colors, .color3').css('color', selectedColor);
+    $('.colors, .color3, .color4, .color5').css('color', selectedColor);
 
 
       let pythonProgress = document.querySelector('.python-progress');
